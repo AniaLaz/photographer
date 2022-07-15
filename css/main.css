@@ -101,6 +101,11 @@ img {
   margin-right: 50px;
 }
 
+.logo.footer__logo {
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   border-bottom: 1px solid #ECECEC;
   background-color: var(--background-color);
@@ -331,45 +336,61 @@ img {
 }
 
 .we-doing {
-  display: none;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 1200px) {
-  .we-doing {
-    display: block;
-  }
+
+.we-doing-title {
+  font-family: "Press+Start+2P&family";
+  color: var(--accent-color);
+  text-shadow: 2px 2px 2px rgba(13, 184, 13, 0.4);
 }
 
 .we-doing-list {
   display: flex;
   margin-top: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .we-doing-item {
   position: relative;
 }
-.we-doing-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .we-doing-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .we-doing-item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .we-doing-img-title {
   position: absolute;
   bottom: 0;
   display: flex;
-  font-family: "Roboto";
+  font-family: "Caveat";
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  height: 30px;
   width: 100%;
   color: var(--accent-second-color);
   background: rgba(47, 48, 58, 0.8);
+}
+@media screen and (min-width: 1200px) {
+  .we-doing-img-title {
+    font-weight: 700;
+    font-size: 14px;
+    height: 70px;
+  }
 }
 
 .team {
@@ -581,6 +602,17 @@ img {
     margin-right: 0;
     margin-bottom: 0;
   }
+}
+
+.logo-address-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--accent-second-color);
 }
 
 .footer-container {
