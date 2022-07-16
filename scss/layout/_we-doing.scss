@@ -21,11 +21,6 @@
 .we-doing-item {
     position: relative;
 
-
-
-    // &:not(:last-child) {
-    //     margin-right: 30px;
-    // }
     @include tablet {
         width: calc((100% - 30px) / 2);
     }
@@ -34,7 +29,6 @@
         width: calc((100% - 60px) / 3);
     }
 }
-
 
 .we-doing-img-title {
     position: absolute;
